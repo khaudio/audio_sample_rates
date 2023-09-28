@@ -32,7 +32,7 @@ SOFTWARE.
 
 #include <cstdint>
 
-namespace AudioSampleRates
+namespace AudioSampleRate
 {
 
 /* ------------------------------- 8000 Hz -------------------------------- */
