@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 
+'''
+Copyright (c) 2023 K Hughes Production LLC
+
+Generates C++ header files for common
+audio sample rates to be used with common
+video frame rates, particularly
+for timing corrections via reinterpretation.
+'''
+
 import itertools
 
 topLevelFilename = 'audiosamplerates.h'
@@ -10,7 +19,8 @@ constValuesFilename = 'inc/audiosamplerateconstvalues.h'
 definitionSpaceIndex = 61
 
 # Section header line length
-headerLineLen = 77
+headerLineLen = 78
+docstringBorderLen = headerLineLen - 1
 
 samplerates = [
         8000,
@@ -36,6 +46,37 @@ framerates = [
     ]
 
 
+docAndLicense = f'''/{"*" * docstringBorderLen}
+Definitions for common audio sample rates
+for use with common video frame rates,
+particularly for timing corrections
+via reinterpretation.
+
+MIT License
+
+Copyright (c) 2023 K Hughes Production LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+{"*" * docstringBorderLen}/
+
+'''
+
 def round_ratio(ratio):
     if (0 <= (abs(ratio) - 0.099) <= 0.01):
         return -0.1 if (ratio < 0) else 0.1
@@ -57,9 +98,12 @@ def framerate_camel_case_name(framerate: str):
 def convert_sample_rate(baseSampleRate, framerateIn, framerateOut):
     correctedSampleRate = baseSampleRate * (framerateIn[1] / framerateOut[1])
     roundedInteger = round(correctedSampleRate)
+
     ratio1 = (baseSampleRate / roundedInteger)
     ratio2 = (roundedInteger / baseSampleRate)
+    
     pullup = (ratio1 >= 1.0)
+    
     ratio1 = round_ratio((ratio1 - 1.0) * 100)
     ratio2 = round_ratio((ratio2 - 1.0) * 100)
     ratioStr = f'{ratio1}% Pullup' if pullup else f'{ratio2}% Pulldown'
@@ -73,7 +117,7 @@ def convert_sample_rate(baseSampleRate, framerateIn, framerateOut):
         )
     numSpacesToDefinition = definitionSpaceIndex - len(macroDefine)
 
-    typedef = (
+    constexprValues = (
             f'sampleRate{baseSampleRate}'
             + f'Pull{"up" if pullup else "down"}'
             + framerate_camel_case_name(framerateIn[0])
@@ -82,30 +126,34 @@ def convert_sample_rate(baseSampleRate, framerateIn, framerateOut):
         )
 
     docstring = (
-            f'/{"*" * 39}'
-            + f'\n{framerateIn[0]} ({ntsc_or_pal(framerateIn[1])}) '
-            + f'to {framerateOut[0]} ({ntsc_or_pal(framerateOut[1])})\n'
-            + f'{roundedInteger} ({round(correctedSampleRate, 5)})\n'
-            + f'({baseSampleRate} to {roundedInteger}; {ratioStr})\n'
-            + f'{"*" * 39}/\n\n'
+            f'/{"*" * docstringBorderLen}\n'
+            + f'{framerateIn[0]} ({ntsc_or_pal(framerateIn[1])}) '
+            + f'to {framerateOut[0]} ({ntsc_or_pal(framerateOut[1])})'
+            + f'; {ratioStr}\n'
+            + f'{baseSampleRate} Hz to {roundedInteger} Hz '
+            + f'({round(correctedSampleRate, 5)})\n'
+            + f'{"*" * docstringBorderLen}/\n\n'
         )
 
     macro = macroDefine + (' ' * numSpacesToDefinition)
 
-    return docstring, macro, typedef, roundedInteger
+    return docstring, macro, constexprValues, roundedInteger
 
 
 if __name__ == '__main__':
     with open(macroFilename, 'w') as mFile:
-        with open(constValuesFilename, 'w') as tFile:
+        with open(constValuesFilename, 'w') as cFile:
 
             topLevelName = 'AUDIOSAMPLERATES_H'
             macroName = 'AUDIOSAMPLERATEMACROS_H'
             constValuesName = 'AUDIOSAMPLERATECONSTVALUES_H'
+
+            mFile.write(docAndLicense)
+            cFile.write(docAndLicense)
             
             mFile.write(f'#ifndef {macroName}\n#define {macroName}\n\n')
-            tFile.write(f'#ifndef {constValuesName}\n#define {constValuesName}\n\n')
-            tFile.write(f'#include <cstdint>\n\n')
+            cFile.write(f'#ifndef {constValuesName}\n#define {constValuesName}\n\n')
+            cFile.write(f'#include <cstdint>\n\n')
 
             for samplerate in samplerates:
                 baseRateName = f'{samplerate} Hz'
@@ -118,7 +166,7 @@ if __name__ == '__main__':
                     )
                 
                 mFile.write(f'{header}\n\n')
-                tFile.write(f'{header}\n\n')
+                cFile.write(f'{header}\n\n')
 
                 baseDefinition = f'#define SAMPLE_RATE_{samplerate}'
                 numSpaces = definitionSpaceIndex - len(baseDefinition)
@@ -129,7 +177,7 @@ if __name__ == '__main__':
                         + (' ' * numSpaces)
                         + f'{samplerate}\n\n'
                     )
-                tFile.write(
+                cFile.write(
                         f'{declarationPreface}sampleRate{samplerate} = '
                         + f'{samplerate};\n\n'
                     )
@@ -144,15 +192,16 @@ if __name__ == '__main__':
                     mFile.write(str(roundedInteger))
                     mFile.write('\n\n')
                     
-                    tFile.write(docstring)
-                    tFile.write(declarationPreface)
-                    tFile.write(typedef)
-                    tFile.write(f' = {roundedInteger};\n\n')
+                    cFile.write(docstring)
+                    cFile.write(declarationPreface)
+                    cFile.write(typedef)
+                    cFile.write(f' = {roundedInteger};\n\n')
             
             mFile.write(f'#endif\n')
-            tFile.write(f'#endif\n')
+            cFile.write(f'#endif\n')
 
     with open(topLevelFilename, 'w') as tlf:
+        tlf.write(docAndLicense)
         tlf.write(
                 f'#ifndef {topLevelName}\n#define {topLevelName}\n\n'
                 + f'#include "{macroFilename}"\n'
