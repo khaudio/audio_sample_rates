@@ -83,8 +83,8 @@ def convert_sample_rate(baseSampleRate, framerateIn, framerateOut):
 
     docstring = (
             f'/{"*" * 39}'
-            + f'\n{framerateIn[0]} ({ntsc_or_pal(framerateIn[0])}) '
-            + f'to {framerateOut[0]} ({ntsc_or_pal(framerateOut[0])})\n'
+            + f'\n{framerateIn[0]} ({ntsc_or_pal(framerateIn[1])}) '
+            + f'to {framerateOut[0]} ({ntsc_or_pal(framerateOut[1])})\n'
             + f'{roundedInteger} ({round(correctedSampleRate, 5)})\n'
             + f'({baseSampleRate} to {roundedInteger}; {ratioStr})\n'
             + f'{"*" * 39}/\n\n'
@@ -122,7 +122,7 @@ if __name__ == '__main__':
 
                 baseDefinition = f'#define SAMPLE_RATE_{samplerate}'
                 numSpaces = definitionSpaceIndex - len(baseDefinition)
-                templatePreface = 'constexpr const uint32_t '
+                declarationPreface = 'constexpr const uint32_t '
 
                 mFile.write(
                         f'{baseDefinition}'
@@ -130,7 +130,7 @@ if __name__ == '__main__':
                         + f'{samplerate}\n\n'
                     )
                 tFile.write(
-                        f'{templatePreface}sampleRate{samplerate} = '
+                        f'{declarationPreface}sampleRate{samplerate} = '
                         + f'{samplerate};\n\n'
                     )
 
@@ -145,7 +145,7 @@ if __name__ == '__main__':
                     mFile.write('\n\n')
                     
                     tFile.write(docstring)
-                    tFile.write(templatePreface)
+                    tFile.write(declarationPreface)
                     tFile.write(typedef)
                     tFile.write(f' = {roundedInteger};\n\n')
             
