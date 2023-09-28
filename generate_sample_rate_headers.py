@@ -155,6 +155,8 @@ if __name__ == '__main__':
             cFile.write(f'#ifndef {constValuesName}\n#define {constValuesName}\n\n')
             cFile.write(f'#include <cstdint>\n\n')
 
+            cFile.write('namespace AudioSampleRate\n{\n\n')
+
             for samplerate in samplerates:
                 baseRateName = f'{samplerate} Hz'
                 dashesPerSide = (headerLineLen - (len(baseRateName) + 8)) / 2
@@ -197,6 +199,8 @@ if __name__ == '__main__':
                     cFile.write(typedef)
                     cFile.write(f' = {roundedInteger};\n\n')
             
+            cFile.write('};\n\n')
+
             mFile.write(f'#endif\n')
             cFile.write(f'#endif\n')
 

@@ -32,6 +32,9 @@ SOFTWARE.
 
 #include <cstdint>
 
+namespace AudioSampleRates
+{
+
 /* ------------------------------- 8000 Hz -------------------------------- */
 
 constexpr const uint32_t sampleRate8000 = 8000;
@@ -1759,5 +1762,7 @@ constexpr const uint32_t sampleRate384000Pulldown30FpsTo25Fps = 460800;
 *****************************************************************************/
 
 constexpr const uint32_t sampleRate384000Pulldown30FpsTo2997Fps = 384384;
+
+};
 
 #endif
