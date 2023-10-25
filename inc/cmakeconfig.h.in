@@ -1,0 +1,4 @@
+/* The configured options and settings for audio_sample_rates */
+
+#define audio_sample_rates_VERSION_MAJOR      @audio_sample_rates_VERSION_MAJOR@
+#define audio_sample_rates_VERSION_MINOR      @audio_sample_rates_VERSION_MINOR@
