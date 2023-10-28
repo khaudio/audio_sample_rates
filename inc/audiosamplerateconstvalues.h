@@ -1,8 +1,7 @@
 /*****************************************************************************
-Definitions for common audio sample rates
-for use with common video frame rates,
-particularly for timing corrections
-via reinterpretation.
+Definitions for common audio sample rates for use with
+common video frame rates, particularly for
+timing corrections via reinterpretation.
 
 MIT License
 
@@ -37,1731 +36,1731 @@ namespace AudioSampleRate
 
 /* ------------------------------- 8000 Hz -------------------------------- */
 
-constexpr const uint32_t sampleRate8000 = 8000;
+constexpr const {datatype} sampleRate8000 = 8000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 8000 Hz to 7992 Hz (7992.00799)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup2398FpsTo24Fps = 7992;
+constexpr const {datatype} sampleRate8000Pullup2398FpsTo24Fps = 7992;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27529% Pullup
 8000 Hz to 7672 Hz (7672.32767)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup2398FpsTo25Fps = 7672;
+constexpr const {datatype} sampleRate8000Pullup2398FpsTo25Fps = 7672;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 8000 Hz to 6400 Hz (6400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup2398FpsTo2997Fps = 6400;
+constexpr const {datatype} sampleRate8000Pullup2398FpsTo2997Fps = 6400;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.1173% Pullup
 8000 Hz to 6394 Hz (6393.60639)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup2398FpsTo30Fps = 6394;
+constexpr const {datatype} sampleRate8000Pullup2398FpsTo30Fps = 6394;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 8000 Hz to 8008 Hz (8008.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown24FpsTo2398Fps = 8008;
+constexpr const {datatype} sampleRate8000Pulldown24FpsTo2398Fps = 8008;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 8000 Hz to 7680 Hz (7680.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup24FpsTo25Fps = 7680;
+constexpr const {datatype} sampleRate8000Pullup24FpsTo25Fps = 7680;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.88292% Pullup
 8000 Hz to 6406 Hz (6406.4)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup24FpsTo2997Fps = 6406;
+constexpr const {datatype} sampleRate8000Pullup24FpsTo2997Fps = 6406;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 8000 Hz to 6400 Hz (6400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup24FpsTo30Fps = 6400;
+constexpr const {datatype} sampleRate8000Pullup24FpsTo30Fps = 6400;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.275% Pulldown
 8000 Hz to 8342 Hz (8341.66667)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown25FpsTo2398Fps = 8342;
+constexpr const {datatype} sampleRate8000Pulldown25FpsTo2398Fps = 8342;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.1625% Pulldown
 8000 Hz to 8333 Hz (8333.33333)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown25FpsTo24Fps = 8333;
+constexpr const {datatype} sampleRate8000Pulldown25FpsTo24Fps = 8333;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88611% Pullup
 8000 Hz to 6673 Hz (6673.33333)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup25FpsTo2997Fps = 6673;
+constexpr const {datatype} sampleRate8000Pullup25FpsTo2997Fps = 6673;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 19.994% Pullup
 8000 Hz to 6667 Hz (6666.66667)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup25FpsTo30Fps = 6667;
+constexpr const {datatype} sampleRate8000Pullup25FpsTo30Fps = 6667;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 8000 Hz to 10000 Hz (10000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown2997FpsTo2398Fps = 10000;
+constexpr const {datatype} sampleRate8000Pulldown2997FpsTo2398Fps = 10000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 8000 Hz to 9990 Hz (9990.00999)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown2997FpsTo24Fps = 9990;
+constexpr const {datatype} sampleRate8000Pulldown2997FpsTo24Fps = 9990;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.875% Pulldown
 8000 Hz to 9590 Hz (9590.40959)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown2997FpsTo25Fps = 9590;
+constexpr const {datatype} sampleRate8000Pulldown2997FpsTo25Fps = 9590;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 8000 Hz to 7992 Hz (7992.00799)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pullup2997FpsTo30Fps = 7992;
+constexpr const {datatype} sampleRate8000Pullup2997FpsTo30Fps = 7992;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 8000 Hz to 10010 Hz (10010.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown30FpsTo2398Fps = 10010;
+constexpr const {datatype} sampleRate8000Pulldown30FpsTo2398Fps = 10010;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 8000 Hz to 10000 Hz (10000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown30FpsTo24Fps = 10000;
+constexpr const {datatype} sampleRate8000Pulldown30FpsTo24Fps = 10000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 8000 Hz to 9600 Hz (9600.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown30FpsTo25Fps = 9600;
+constexpr const {datatype} sampleRate8000Pulldown30FpsTo25Fps = 9600;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 8000 Hz to 8008 Hz (8008.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate8000Pulldown30FpsTo2997Fps = 8008;
+constexpr const {datatype} sampleRate8000Pulldown30FpsTo2997Fps = 8008;
 
 /* ------------------------------- 11025 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate11025 = 11025;
+constexpr const {datatype} sampleRate11025 = 11025;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 11025 Hz to 11014 Hz (11013.98601)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup2398FpsTo24Fps = 11014;
+constexpr const {datatype} sampleRate11025Pullup2398FpsTo24Fps = 11014;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27504% Pullup
 11025 Hz to 10573 Hz (10573.42657)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup2398FpsTo25Fps = 10573;
+constexpr const {datatype} sampleRate11025Pullup2398FpsTo25Fps = 10573;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 11025 Hz to 8820 Hz (8820.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup2398FpsTo2997Fps = 8820;
+constexpr const {datatype} sampleRate11025Pullup2398FpsTo2997Fps = 8820;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12768% Pullup
 11025 Hz to 8811 Hz (8811.18881)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup2398FpsTo30Fps = 8811;
+constexpr const {datatype} sampleRate11025Pullup2398FpsTo30Fps = 8811;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 11025 Hz to 11036 Hz (11036.025)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown24FpsTo2398Fps = 11036;
+constexpr const {datatype} sampleRate11025Pulldown24FpsTo2398Fps = 11036;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 11025 Hz to 10584 Hz (10584.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup24FpsTo25Fps = 10584;
+constexpr const {datatype} sampleRate11025Pullup24FpsTo25Fps = 10584;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87258% Pullup
 11025 Hz to 8829 Hz (8828.82)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup24FpsTo2997Fps = 8829;
+constexpr const {datatype} sampleRate11025Pullup24FpsTo2997Fps = 8829;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 11025 Hz to 8820 Hz (8820.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup24FpsTo30Fps = 8820;
+constexpr const {datatype} sampleRate11025Pullup24FpsTo30Fps = 8820;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27211% Pulldown
 11025 Hz to 11496 Hz (11495.85938)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown25FpsTo2398Fps = 11496;
+constexpr const {datatype} sampleRate11025Pulldown25FpsTo2398Fps = 11496;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16327% Pulldown
 11025 Hz to 11484 Hz (11484.375)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown25FpsTo24Fps = 11484;
+constexpr const {datatype} sampleRate11025Pulldown25FpsTo24Fps = 11484;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.87605% Pullup
 11025 Hz to 9197 Hz (9196.6875)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup25FpsTo2997Fps = 9197;
+constexpr const {datatype} sampleRate11025Pullup25FpsTo2997Fps = 9197;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 19.99347% Pullup
 11025 Hz to 9188 Hz (9187.5)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup25FpsTo30Fps = 9188;
+constexpr const {datatype} sampleRate11025Pullup25FpsTo30Fps = 9188;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 24.99773% Pulldown
 11025 Hz to 13781 Hz (13781.25)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown2997FpsTo2398Fps = 13781;
+constexpr const {datatype} sampleRate11025Pulldown2997FpsTo2398Fps = 13781;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.87075% Pulldown
 11025 Hz to 13767 Hz (13767.48252)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown2997FpsTo24Fps = 13767;
+constexpr const {datatype} sampleRate11025Pulldown2997FpsTo24Fps = 13767;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88209% Pulldown
 11025 Hz to 13217 Hz (13216.78322)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown2997FpsTo25Fps = 13217;
+constexpr const {datatype} sampleRate11025Pulldown2997FpsTo25Fps = 13217;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 11025 Hz to 11014 Hz (11013.98601)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pullup2997FpsTo30Fps = 11014;
+constexpr const {datatype} sampleRate11025Pullup2997FpsTo30Fps = 11014;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.12472% Pulldown
 11025 Hz to 13795 Hz (13795.03125)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown30FpsTo2398Fps = 13795;
+constexpr const {datatype} sampleRate11025Pulldown30FpsTo2398Fps = 13795;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 24.99773% Pulldown
 11025 Hz to 13781 Hz (13781.25)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown30FpsTo24Fps = 13781;
+constexpr const {datatype} sampleRate11025Pulldown30FpsTo24Fps = 13781;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 11025 Hz to 13230 Hz (13230.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown30FpsTo25Fps = 13230;
+constexpr const {datatype} sampleRate11025Pulldown30FpsTo25Fps = 13230;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 11025 Hz to 11036 Hz (11036.025)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate11025Pulldown30FpsTo2997Fps = 11036;
+constexpr const {datatype} sampleRate11025Pulldown30FpsTo2997Fps = 11036;
 
 /* ------------------------------- 16000 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate16000 = 16000;
+constexpr const {datatype} sampleRate16000 = 16000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 16000 Hz to 15984 Hz (15984.01598)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup2398FpsTo24Fps = 15984;
+constexpr const {datatype} sampleRate16000Pullup2398FpsTo24Fps = 15984;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.26849% Pullup
 16000 Hz to 15345 Hz (15344.65534)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup2398FpsTo25Fps = 15345;
+constexpr const {datatype} sampleRate16000Pullup2398FpsTo25Fps = 15345;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 16000 Hz to 12800 Hz (12800.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup2398FpsTo2997Fps = 12800;
+constexpr const {datatype} sampleRate16000Pullup2398FpsTo2997Fps = 12800;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12708% Pullup
 16000 Hz to 12787 Hz (12787.21279)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup2398FpsTo30Fps = 12787;
+constexpr const {datatype} sampleRate16000Pullup2398FpsTo30Fps = 12787;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 16000 Hz to 16016 Hz (16016.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown24FpsTo2398Fps = 16016;
+constexpr const {datatype} sampleRate16000Pulldown24FpsTo2398Fps = 16016;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 16000 Hz to 15360 Hz (15360.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup24FpsTo25Fps = 15360;
+constexpr const {datatype} sampleRate16000Pullup24FpsTo25Fps = 15360;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87318% Pullup
 16000 Hz to 12813 Hz (12812.8)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup24FpsTo2997Fps = 12813;
+constexpr const {datatype} sampleRate16000Pullup24FpsTo2997Fps = 12813;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 16000 Hz to 12800 Hz (12800.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup24FpsTo30Fps = 12800;
+constexpr const {datatype} sampleRate16000Pullup24FpsTo30Fps = 12800;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.26875% Pulldown
 16000 Hz to 16683 Hz (16683.33333)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown25FpsTo2398Fps = 16683;
+constexpr const {datatype} sampleRate16000Pulldown25FpsTo2398Fps = 16683;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16875% Pulldown
 16000 Hz to 16667 Hz (16666.66667)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown25FpsTo24Fps = 16667;
+constexpr const {datatype} sampleRate16000Pulldown25FpsTo24Fps = 16667;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.87713% Pullup
 16000 Hz to 13347 Hz (13346.66667)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup25FpsTo2997Fps = 13347;
+constexpr const {datatype} sampleRate16000Pullup25FpsTo2997Fps = 13347;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.003% Pullup
 16000 Hz to 13333 Hz (13333.33333)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup25FpsTo30Fps = 13333;
+constexpr const {datatype} sampleRate16000Pullup25FpsTo30Fps = 13333;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 16000 Hz to 20000 Hz (20000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown2997FpsTo2398Fps = 20000;
+constexpr const {datatype} sampleRate16000Pulldown2997FpsTo2398Fps = 20000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 16000 Hz to 19980 Hz (19980.01998)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown2997FpsTo24Fps = 19980;
+constexpr const {datatype} sampleRate16000Pulldown2997FpsTo24Fps = 19980;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88125% Pulldown
 16000 Hz to 19181 Hz (19180.81918)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown2997FpsTo25Fps = 19181;
+constexpr const {datatype} sampleRate16000Pulldown2997FpsTo25Fps = 19181;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 16000 Hz to 15984 Hz (15984.01598)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pullup2997FpsTo30Fps = 15984;
+constexpr const {datatype} sampleRate16000Pullup2997FpsTo30Fps = 15984;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 16000 Hz to 20020 Hz (20020.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown30FpsTo2398Fps = 20020;
+constexpr const {datatype} sampleRate16000Pulldown30FpsTo2398Fps = 20020;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 16000 Hz to 20000 Hz (20000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown30FpsTo24Fps = 20000;
+constexpr const {datatype} sampleRate16000Pulldown30FpsTo24Fps = 20000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 16000 Hz to 19200 Hz (19200.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown30FpsTo25Fps = 19200;
+constexpr const {datatype} sampleRate16000Pulldown30FpsTo25Fps = 19200;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 16000 Hz to 16016 Hz (16016.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate16000Pulldown30FpsTo2997Fps = 16016;
+constexpr const {datatype} sampleRate16000Pulldown30FpsTo2997Fps = 16016;
 
 /* ------------------------------- 22050 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate22050 = 22050;
+constexpr const {datatype} sampleRate22050 = 22050;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 22050 Hz to 22028 Hz (22027.97203)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup2398FpsTo24Fps = 22028;
+constexpr const {datatype} sampleRate22050Pullup2398FpsTo24Fps = 22028;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27011% Pullup
 22050 Hz to 21147 Hz (21146.85315)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup2398FpsTo25Fps = 21147;
+constexpr const {datatype} sampleRate22050Pullup2398FpsTo25Fps = 21147;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 22050 Hz to 17640 Hz (17640.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup2398FpsTo2997Fps = 17640;
+constexpr const {datatype} sampleRate22050Pullup2398FpsTo2997Fps = 17640;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12768% Pullup
 22050 Hz to 17622 Hz (17622.37762)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup2398FpsTo30Fps = 17622;
+constexpr const {datatype} sampleRate22050Pullup2398FpsTo30Fps = 17622;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 22050 Hz to 22072 Hz (22072.05)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown24FpsTo2398Fps = 22072;
+constexpr const {datatype} sampleRate22050Pulldown24FpsTo2398Fps = 22072;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 22050 Hz to 21168 Hz (21168.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup24FpsTo25Fps = 21168;
+constexpr const {datatype} sampleRate22050Pullup24FpsTo25Fps = 21168;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87258% Pullup
 22050 Hz to 17658 Hz (17657.64)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup24FpsTo2997Fps = 17658;
+constexpr const {datatype} sampleRate22050Pullup24FpsTo2997Fps = 17658;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 22050 Hz to 17640 Hz (17640.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup24FpsTo30Fps = 17640;
+constexpr const {datatype} sampleRate22050Pullup24FpsTo30Fps = 17640;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27211% Pulldown
 22050 Hz to 22992 Hz (22991.71875)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown25FpsTo2398Fps = 22992;
+constexpr const {datatype} sampleRate22050Pulldown25FpsTo2398Fps = 22992;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.1678% Pulldown
 22050 Hz to 22969 Hz (22968.75)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown25FpsTo24Fps = 22969;
+constexpr const {datatype} sampleRate22050Pulldown25FpsTo24Fps = 22969;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88256% Pullup
 22050 Hz to 18393 Hz (18393.375)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup25FpsTo2997Fps = 18393;
+constexpr const {datatype} sampleRate22050Pullup25FpsTo2997Fps = 18393;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 22050 Hz to 18375 Hz (18375.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup25FpsTo30Fps = 18375;
+constexpr const {datatype} sampleRate22050Pullup25FpsTo30Fps = 18375;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 24.99773% Pulldown
 22050 Hz to 27562 Hz (27562.5)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown2997FpsTo2398Fps = 27562;
+constexpr const {datatype} sampleRate22050Pulldown2997FpsTo2398Fps = 27562;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.87528% Pulldown
 22050 Hz to 27535 Hz (27534.96503)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown2997FpsTo24Fps = 27535;
+constexpr const {datatype} sampleRate22050Pulldown2997FpsTo24Fps = 27535;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88209% Pulldown
 22050 Hz to 26434 Hz (26433.56643)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown2997FpsTo25Fps = 26434;
+constexpr const {datatype} sampleRate22050Pulldown2997FpsTo25Fps = 26434;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 22050 Hz to 22028 Hz (22027.97203)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pullup2997FpsTo30Fps = 22028;
+constexpr const {datatype} sampleRate22050Pullup2997FpsTo30Fps = 22028;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.12472% Pulldown
 22050 Hz to 27590 Hz (27590.0625)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown30FpsTo2398Fps = 27590;
+constexpr const {datatype} sampleRate22050Pulldown30FpsTo2398Fps = 27590;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 24.99773% Pulldown
 22050 Hz to 27562 Hz (27562.5)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown30FpsTo24Fps = 27562;
+constexpr const {datatype} sampleRate22050Pulldown30FpsTo24Fps = 27562;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 22050 Hz to 26460 Hz (26460.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown30FpsTo25Fps = 26460;
+constexpr const {datatype} sampleRate22050Pulldown30FpsTo25Fps = 26460;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 22050 Hz to 22072 Hz (22072.05)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate22050Pulldown30FpsTo2997Fps = 22072;
+constexpr const {datatype} sampleRate22050Pulldown30FpsTo2997Fps = 22072;
 
 /* ------------------------------- 32000 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate32000 = 32000;
+constexpr const {datatype} sampleRate32000 = 32000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 32000 Hz to 31968 Hz (31968.03197)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup2398FpsTo24Fps = 31968;
+constexpr const {datatype} sampleRate32000Pullup2398FpsTo24Fps = 31968;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27189% Pullup
 32000 Hz to 30689 Hz (30689.31069)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup2398FpsTo25Fps = 30689;
+constexpr const {datatype} sampleRate32000Pullup2398FpsTo25Fps = 30689;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 32000 Hz to 25600 Hz (25600.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup2398FpsTo2997Fps = 25600;
+constexpr const {datatype} sampleRate32000Pullup2398FpsTo2997Fps = 25600;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12708% Pullup
 32000 Hz to 25574 Hz (25574.42557)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup2398FpsTo30Fps = 25574;
+constexpr const {datatype} sampleRate32000Pullup2398FpsTo30Fps = 25574;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 32000 Hz to 32032 Hz (32032.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown24FpsTo2398Fps = 32032;
+constexpr const {datatype} sampleRate32000Pulldown24FpsTo2398Fps = 32032;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 32000 Hz to 30720 Hz (30720.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup24FpsTo25Fps = 30720;
+constexpr const {datatype} sampleRate32000Pullup24FpsTo25Fps = 30720;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87318% Pullup
 32000 Hz to 25626 Hz (25625.6)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup24FpsTo2997Fps = 25626;
+constexpr const {datatype} sampleRate32000Pullup24FpsTo2997Fps = 25626;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 32000 Hz to 25600 Hz (25600.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup24FpsTo30Fps = 25600;
+constexpr const {datatype} sampleRate32000Pullup24FpsTo30Fps = 25600;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27187% Pulldown
 32000 Hz to 33367 Hz (33366.66667)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown25FpsTo2398Fps = 33367;
+constexpr const {datatype} sampleRate32000Pulldown25FpsTo2398Fps = 33367;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16562% Pulldown
 32000 Hz to 33333 Hz (33333.33333)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown25FpsTo24Fps = 33333;
+constexpr const {datatype} sampleRate32000Pulldown25FpsTo24Fps = 33333;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88162% Pullup
 32000 Hz to 26693 Hz (26693.33333)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup25FpsTo2997Fps = 26693;
+constexpr const {datatype} sampleRate32000Pullup25FpsTo2997Fps = 26693;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 19.9985% Pullup
 32000 Hz to 26667 Hz (26666.66667)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup25FpsTo30Fps = 26667;
+constexpr const {datatype} sampleRate32000Pullup25FpsTo30Fps = 26667;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 32000 Hz to 40000 Hz (40000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown2997FpsTo2398Fps = 40000;
+constexpr const {datatype} sampleRate32000Pulldown2997FpsTo2398Fps = 40000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 32000 Hz to 39960 Hz (39960.03996)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown2997FpsTo24Fps = 39960;
+constexpr const {datatype} sampleRate32000Pulldown2997FpsTo24Fps = 39960;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88125% Pulldown
 32000 Hz to 38362 Hz (38361.63836)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown2997FpsTo25Fps = 38362;
+constexpr const {datatype} sampleRate32000Pulldown2997FpsTo25Fps = 38362;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 32000 Hz to 31968 Hz (31968.03197)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pullup2997FpsTo30Fps = 31968;
+constexpr const {datatype} sampleRate32000Pullup2997FpsTo30Fps = 31968;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 32000 Hz to 40040 Hz (40040.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown30FpsTo2398Fps = 40040;
+constexpr const {datatype} sampleRate32000Pulldown30FpsTo2398Fps = 40040;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 32000 Hz to 40000 Hz (40000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown30FpsTo24Fps = 40000;
+constexpr const {datatype} sampleRate32000Pulldown30FpsTo24Fps = 40000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 32000 Hz to 38400 Hz (38400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown30FpsTo25Fps = 38400;
+constexpr const {datatype} sampleRate32000Pulldown30FpsTo25Fps = 38400;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 32000 Hz to 32032 Hz (32032.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate32000Pulldown30FpsTo2997Fps = 32032;
+constexpr const {datatype} sampleRate32000Pulldown30FpsTo2997Fps = 32032;
 
 /* ------------------------------- 44100 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate44100 = 44100;
+constexpr const {datatype} sampleRate44100 = 44100;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 44100 Hz to 44056 Hz (44055.94406)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup2398FpsTo24Fps = 44056;
+constexpr const {datatype} sampleRate44100Pullup2398FpsTo24Fps = 44056;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27011% Pullup
 44100 Hz to 42294 Hz (42293.70629)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup2398FpsTo25Fps = 42294;
+constexpr const {datatype} sampleRate44100Pullup2398FpsTo25Fps = 42294;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 44100 Hz to 35280 Hz (35280.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup2398FpsTo2997Fps = 35280;
+constexpr const {datatype} sampleRate44100Pullup2398FpsTo2997Fps = 35280;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12413% Pullup
 44100 Hz to 35245 Hz (35244.75524)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup2398FpsTo30Fps = 35245;
+constexpr const {datatype} sampleRate44100Pullup2398FpsTo30Fps = 35245;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 44100 Hz to 44144 Hz (44144.1)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown24FpsTo2398Fps = 44144;
+constexpr const {datatype} sampleRate44100Pulldown24FpsTo2398Fps = 44144;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 44100 Hz to 42336 Hz (42336.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup24FpsTo25Fps = 42336;
+constexpr const {datatype} sampleRate44100Pullup24FpsTo25Fps = 42336;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87611% Pullup
 44100 Hz to 35315 Hz (35315.28)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup24FpsTo2997Fps = 35315;
+constexpr const {datatype} sampleRate44100Pullup24FpsTo2997Fps = 35315;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 44100 Hz to 35280 Hz (35280.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup24FpsTo30Fps = 35280;
+constexpr const {datatype} sampleRate44100Pullup24FpsTo30Fps = 35280;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.26984% Pulldown
 44100 Hz to 45983 Hz (45983.4375)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown25FpsTo2398Fps = 45983;
+constexpr const {datatype} sampleRate44100Pulldown25FpsTo2398Fps = 45983;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.1678% Pulldown
 44100 Hz to 45938 Hz (45937.5)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown25FpsTo24Fps = 45938;
+constexpr const {datatype} sampleRate44100Pulldown25FpsTo24Fps = 45938;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.87931% Pullup
 44100 Hz to 36787 Hz (36786.75)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup25FpsTo2997Fps = 36787;
+constexpr const {datatype} sampleRate44100Pullup25FpsTo2997Fps = 36787;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 44100 Hz to 36750 Hz (36750.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup25FpsTo30Fps = 36750;
+constexpr const {datatype} sampleRate44100Pullup25FpsTo30Fps = 36750;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 44100 Hz to 55125 Hz (55125.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown2997FpsTo2398Fps = 55125;
+constexpr const {datatype} sampleRate44100Pulldown2997FpsTo2398Fps = 55125;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.87528% Pulldown
 44100 Hz to 55070 Hz (55069.93007)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown2997FpsTo24Fps = 55070;
+constexpr const {datatype} sampleRate44100Pulldown2997FpsTo24Fps = 55070;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.87982% Pulldown
 44100 Hz to 52867 Hz (52867.13287)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown2997FpsTo25Fps = 52867;
+constexpr const {datatype} sampleRate44100Pulldown2997FpsTo25Fps = 52867;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 44100 Hz to 44056 Hz (44055.94406)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pullup2997FpsTo30Fps = 44056;
+constexpr const {datatype} sampleRate44100Pullup2997FpsTo30Fps = 44056;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.12472% Pulldown
 44100 Hz to 55180 Hz (55180.125)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown30FpsTo2398Fps = 55180;
+constexpr const {datatype} sampleRate44100Pulldown30FpsTo2398Fps = 55180;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 44100 Hz to 55125 Hz (55125.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown30FpsTo24Fps = 55125;
+constexpr const {datatype} sampleRate44100Pulldown30FpsTo24Fps = 55125;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 44100 Hz to 52920 Hz (52920.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown30FpsTo25Fps = 52920;
+constexpr const {datatype} sampleRate44100Pulldown30FpsTo25Fps = 52920;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 44100 Hz to 44144 Hz (44144.1)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate44100Pulldown30FpsTo2997Fps = 44144;
+constexpr const {datatype} sampleRate44100Pulldown30FpsTo2997Fps = 44144;
 
 /* ------------------------------- 48000 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate48000 = 48000;
+constexpr const {datatype} sampleRate48000 = 48000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 48000 Hz to 47952 Hz (47952.04795)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup2398FpsTo24Fps = 47952;
+constexpr const {datatype} sampleRate48000Pullup2398FpsTo24Fps = 47952;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27076% Pullup
 48000 Hz to 46034 Hz (46033.96603)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup2398FpsTo25Fps = 46034;
+constexpr const {datatype} sampleRate48000Pullup2398FpsTo25Fps = 46034;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 48000 Hz to 38400 Hz (38400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup2398FpsTo2997Fps = 38400;
+constexpr const {datatype} sampleRate48000Pullup2398FpsTo2997Fps = 38400;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12382% Pullup
 48000 Hz to 38362 Hz (38361.63836)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup2398FpsTo30Fps = 38362;
+constexpr const {datatype} sampleRate48000Pullup2398FpsTo30Fps = 38362;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 48000 Hz to 48048 Hz (48048.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown24FpsTo2398Fps = 48048;
+constexpr const {datatype} sampleRate48000Pulldown24FpsTo2398Fps = 48048;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 48000 Hz to 46080 Hz (46080.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup24FpsTo25Fps = 46080;
+constexpr const {datatype} sampleRate48000Pullup24FpsTo25Fps = 46080;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87642% Pullup
 48000 Hz to 38438 Hz (38438.4)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup24FpsTo2997Fps = 38438;
+constexpr const {datatype} sampleRate48000Pullup24FpsTo2997Fps = 38438;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 48000 Hz to 38400 Hz (38400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup24FpsTo30Fps = 38400;
+constexpr const {datatype} sampleRate48000Pullup24FpsTo30Fps = 38400;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27083% Pulldown
 48000 Hz to 50050 Hz (50050.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown25FpsTo2398Fps = 50050;
+constexpr const {datatype} sampleRate48000Pulldown25FpsTo2398Fps = 50050;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16667% Pulldown
 48000 Hz to 50000 Hz (50000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown25FpsTo24Fps = 50000;
+constexpr const {datatype} sampleRate48000Pulldown25FpsTo24Fps = 50000;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88012% Pullup
 48000 Hz to 40040 Hz (40040.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup25FpsTo2997Fps = 40040;
+constexpr const {datatype} sampleRate48000Pullup25FpsTo2997Fps = 40040;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 48000 Hz to 40000 Hz (40000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup25FpsTo30Fps = 40000;
+constexpr const {datatype} sampleRate48000Pullup25FpsTo30Fps = 40000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 48000 Hz to 60000 Hz (60000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown2997FpsTo2398Fps = 60000;
+constexpr const {datatype} sampleRate48000Pulldown2997FpsTo2398Fps = 60000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 48000 Hz to 59940 Hz (59940.05994)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown2997FpsTo24Fps = 59940;
+constexpr const {datatype} sampleRate48000Pulldown2997FpsTo24Fps = 59940;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.87917% Pulldown
 48000 Hz to 57542 Hz (57542.45754)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown2997FpsTo25Fps = 57542;
+constexpr const {datatype} sampleRate48000Pulldown2997FpsTo25Fps = 57542;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 48000 Hz to 47952 Hz (47952.04795)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pullup2997FpsTo30Fps = 47952;
+constexpr const {datatype} sampleRate48000Pullup2997FpsTo30Fps = 47952;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 48000 Hz to 60060 Hz (60060.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown30FpsTo2398Fps = 60060;
+constexpr const {datatype} sampleRate48000Pulldown30FpsTo2398Fps = 60060;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 48000 Hz to 60000 Hz (60000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown30FpsTo24Fps = 60000;
+constexpr const {datatype} sampleRate48000Pulldown30FpsTo24Fps = 60000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 48000 Hz to 57600 Hz (57600.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown30FpsTo25Fps = 57600;
+constexpr const {datatype} sampleRate48000Pulldown30FpsTo25Fps = 57600;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 48000 Hz to 48048 Hz (48048.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate48000Pulldown30FpsTo2997Fps = 48048;
+constexpr const {datatype} sampleRate48000Pulldown30FpsTo2997Fps = 48048;
 
 /* ------------------------------- 88200 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate88200 = 88200;
+constexpr const {datatype} sampleRate88200 = 88200;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 88200 Hz to 88112 Hz (88111.88811)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup2398FpsTo24Fps = 88112;
+constexpr const {datatype} sampleRate88200Pullup2398FpsTo24Fps = 88112;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27134% Pullup
 88200 Hz to 84587 Hz (84587.41259)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup2398FpsTo25Fps = 84587;
+constexpr const {datatype} sampleRate88200Pullup2398FpsTo25Fps = 84587;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 88200 Hz to 70560 Hz (70560.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup2398FpsTo2997Fps = 70560;
+constexpr const {datatype} sampleRate88200Pullup2398FpsTo2997Fps = 70560;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12413% Pullup
 88200 Hz to 70490 Hz (70489.51049)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup2398FpsTo30Fps = 70490;
+constexpr const {datatype} sampleRate88200Pullup2398FpsTo30Fps = 70490;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 88200 Hz to 88288 Hz (88288.2)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown24FpsTo2398Fps = 88288;
+constexpr const {datatype} sampleRate88200Pulldown24FpsTo2398Fps = 88288;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 88200 Hz to 84672 Hz (84672.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup24FpsTo25Fps = 84672;
+constexpr const {datatype} sampleRate88200Pullup24FpsTo25Fps = 84672;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87435% Pullup
 88200 Hz to 70631 Hz (70630.56)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup24FpsTo2997Fps = 70631;
+constexpr const {datatype} sampleRate88200Pullup24FpsTo2997Fps = 70631;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 88200 Hz to 70560 Hz (70560.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup24FpsTo30Fps = 70560;
+constexpr const {datatype} sampleRate88200Pullup24FpsTo30Fps = 70560;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27098% Pulldown
 88200 Hz to 91967 Hz (91966.875)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown25FpsTo2398Fps = 91967;
+constexpr const {datatype} sampleRate88200Pulldown25FpsTo2398Fps = 91967;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16667% Pulldown
 88200 Hz to 91875 Hz (91875.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown25FpsTo24Fps = 91875;
+constexpr const {datatype} sampleRate88200Pulldown25FpsTo24Fps = 91875;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.87931% Pullup
 88200 Hz to 73574 Hz (73573.5)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup25FpsTo2997Fps = 73574;
+constexpr const {datatype} sampleRate88200Pullup25FpsTo2997Fps = 73574;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 88200 Hz to 73500 Hz (73500.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup25FpsTo30Fps = 73500;
+constexpr const {datatype} sampleRate88200Pullup25FpsTo30Fps = 73500;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 88200 Hz to 110250 Hz (110250.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown2997FpsTo2398Fps = 110250;
+constexpr const {datatype} sampleRate88200Pulldown2997FpsTo2398Fps = 110250;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.87528% Pulldown
 88200 Hz to 110140 Hz (110139.86014)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown2997FpsTo24Fps = 110140;
+constexpr const {datatype} sampleRate88200Pulldown2997FpsTo24Fps = 110140;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.87982% Pulldown
 88200 Hz to 105734 Hz (105734.26573)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown2997FpsTo25Fps = 105734;
+constexpr const {datatype} sampleRate88200Pulldown2997FpsTo25Fps = 105734;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 88200 Hz to 88112 Hz (88111.88811)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pullup2997FpsTo30Fps = 88112;
+constexpr const {datatype} sampleRate88200Pullup2997FpsTo30Fps = 88112;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.12472% Pulldown
 88200 Hz to 110360 Hz (110360.25)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown30FpsTo2398Fps = 110360;
+constexpr const {datatype} sampleRate88200Pulldown30FpsTo2398Fps = 110360;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 88200 Hz to 110250 Hz (110250.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown30FpsTo24Fps = 110250;
+constexpr const {datatype} sampleRate88200Pulldown30FpsTo24Fps = 110250;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 88200 Hz to 105840 Hz (105840.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown30FpsTo25Fps = 105840;
+constexpr const {datatype} sampleRate88200Pulldown30FpsTo25Fps = 105840;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 88200 Hz to 88288 Hz (88288.2)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate88200Pulldown30FpsTo2997Fps = 88288;
+constexpr const {datatype} sampleRate88200Pulldown30FpsTo2997Fps = 88288;
 
 /* ------------------------------- 96000 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate96000 = 96000;
+constexpr const {datatype} sampleRate96000 = 96000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 96000 Hz to 95904 Hz (95904.0959)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup2398FpsTo24Fps = 95904;
+constexpr const {datatype} sampleRate96000Pullup2398FpsTo24Fps = 95904;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27076% Pullup
 96000 Hz to 92068 Hz (92067.93207)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup2398FpsTo25Fps = 92068;
+constexpr const {datatype} sampleRate96000Pullup2398FpsTo25Fps = 92068;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 96000 Hz to 76800 Hz (76800.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup2398FpsTo2997Fps = 76800;
+constexpr const {datatype} sampleRate96000Pullup2398FpsTo2997Fps = 76800;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12545% Pullup
 96000 Hz to 76723 Hz (76723.27672)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup2398FpsTo30Fps = 76723;
+constexpr const {datatype} sampleRate96000Pullup2398FpsTo30Fps = 76723;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 96000 Hz to 96096 Hz (96096.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown24FpsTo2398Fps = 96096;
+constexpr const {datatype} sampleRate96000Pulldown24FpsTo2398Fps = 96096;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 96000 Hz to 92160 Hz (92160.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup24FpsTo25Fps = 92160;
+constexpr const {datatype} sampleRate96000Pullup24FpsTo25Fps = 92160;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.8748% Pullup
 96000 Hz to 76877 Hz (76876.8)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup24FpsTo2997Fps = 76877;
+constexpr const {datatype} sampleRate96000Pullup24FpsTo2997Fps = 76877;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 96000 Hz to 76800 Hz (76800.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup24FpsTo30Fps = 76800;
+constexpr const {datatype} sampleRate96000Pullup24FpsTo30Fps = 76800;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27083% Pulldown
 96000 Hz to 100100 Hz (100100.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown25FpsTo2398Fps = 100100;
+constexpr const {datatype} sampleRate96000Pulldown25FpsTo2398Fps = 100100;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16667% Pulldown
 96000 Hz to 100000 Hz (100000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown25FpsTo24Fps = 100000;
+constexpr const {datatype} sampleRate96000Pulldown25FpsTo24Fps = 100000;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88012% Pullup
 96000 Hz to 80080 Hz (80080.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup25FpsTo2997Fps = 80080;
+constexpr const {datatype} sampleRate96000Pullup25FpsTo2997Fps = 80080;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 96000 Hz to 80000 Hz (80000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup25FpsTo30Fps = 80000;
+constexpr const {datatype} sampleRate96000Pullup25FpsTo30Fps = 80000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 96000 Hz to 120000 Hz (120000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown2997FpsTo2398Fps = 120000;
+constexpr const {datatype} sampleRate96000Pulldown2997FpsTo2398Fps = 120000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 96000 Hz to 119880 Hz (119880.11988)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown2997FpsTo24Fps = 119880;
+constexpr const {datatype} sampleRate96000Pulldown2997FpsTo24Fps = 119880;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88021% Pulldown
 96000 Hz to 115085 Hz (115084.91508)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown2997FpsTo25Fps = 115085;
+constexpr const {datatype} sampleRate96000Pulldown2997FpsTo25Fps = 115085;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 96000 Hz to 95904 Hz (95904.0959)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pullup2997FpsTo30Fps = 95904;
+constexpr const {datatype} sampleRate96000Pullup2997FpsTo30Fps = 95904;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 96000 Hz to 120120 Hz (120120.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown30FpsTo2398Fps = 120120;
+constexpr const {datatype} sampleRate96000Pulldown30FpsTo2398Fps = 120120;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 96000 Hz to 120000 Hz (120000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown30FpsTo24Fps = 120000;
+constexpr const {datatype} sampleRate96000Pulldown30FpsTo24Fps = 120000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 96000 Hz to 115200 Hz (115200.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown30FpsTo25Fps = 115200;
+constexpr const {datatype} sampleRate96000Pulldown30FpsTo25Fps = 115200;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 96000 Hz to 96096 Hz (96096.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate96000Pulldown30FpsTo2997Fps = 96096;
+constexpr const {datatype} sampleRate96000Pulldown30FpsTo2997Fps = 96096;
 
 /* ------------------------------ 176400 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate176400 = 176400;
+constexpr const {datatype} sampleRate176400 = 176400;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 176400 Hz to 176224 Hz (176223.77622)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup2398FpsTo24Fps = 176224;
+constexpr const {datatype} sampleRate176400Pullup2398FpsTo24Fps = 176224;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27073% Pullup
 176400 Hz to 169175 Hz (169174.82517)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup2398FpsTo25Fps = 169175;
+constexpr const {datatype} sampleRate176400Pullup2398FpsTo25Fps = 169175;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 176400 Hz to 141120 Hz (141120.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup2398FpsTo2997Fps = 141120;
+constexpr const {datatype} sampleRate176400Pullup2398FpsTo2997Fps = 141120;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12502% Pullup
 176400 Hz to 140979 Hz (140979.02098)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup2398FpsTo30Fps = 140979;
+constexpr const {datatype} sampleRate176400Pullup2398FpsTo30Fps = 140979;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 176400 Hz to 176576 Hz (176576.4)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown24FpsTo2398Fps = 176576;
+constexpr const {datatype} sampleRate176400Pulldown24FpsTo2398Fps = 176576;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 176400 Hz to 169344 Hz (169344.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup24FpsTo25Fps = 169344;
+constexpr const {datatype} sampleRate176400Pullup24FpsTo25Fps = 169344;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87523% Pullup
 176400 Hz to 141261 Hz (141261.12)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup24FpsTo2997Fps = 141261;
+constexpr const {datatype} sampleRate176400Pullup24FpsTo2997Fps = 141261;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 176400 Hz to 141120 Hz (141120.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup24FpsTo30Fps = 141120;
+constexpr const {datatype} sampleRate176400Pullup24FpsTo30Fps = 141120;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27098% Pulldown
 176400 Hz to 183934 Hz (183933.75)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown25FpsTo2398Fps = 183934;
+constexpr const {datatype} sampleRate176400Pulldown25FpsTo2398Fps = 183934;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16667% Pulldown
 176400 Hz to 183750 Hz (183750.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown25FpsTo24Fps = 183750;
+constexpr const {datatype} sampleRate176400Pulldown25FpsTo24Fps = 183750;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88012% Pullup
 176400 Hz to 147147 Hz (147147.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup25FpsTo2997Fps = 147147;
+constexpr const {datatype} sampleRate176400Pullup25FpsTo2997Fps = 147147;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 176400 Hz to 147000 Hz (147000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup25FpsTo30Fps = 147000;
+constexpr const {datatype} sampleRate176400Pullup25FpsTo30Fps = 147000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 176400 Hz to 220500 Hz (220500.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown2997FpsTo2398Fps = 220500;
+constexpr const {datatype} sampleRate176400Pulldown2997FpsTo2398Fps = 220500;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.87528% Pulldown
 176400 Hz to 220280 Hz (220279.72028)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown2997FpsTo24Fps = 220280;
+constexpr const {datatype} sampleRate176400Pulldown2997FpsTo24Fps = 220280;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88039% Pulldown
 176400 Hz to 211469 Hz (211468.53147)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown2997FpsTo25Fps = 211469;
+constexpr const {datatype} sampleRate176400Pulldown2997FpsTo25Fps = 211469;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 176400 Hz to 176224 Hz (176223.77622)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pullup2997FpsTo30Fps = 176224;
+constexpr const {datatype} sampleRate176400Pullup2997FpsTo30Fps = 176224;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.12472% Pulldown
 176400 Hz to 220720 Hz (220720.5)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown30FpsTo2398Fps = 220720;
+constexpr const {datatype} sampleRate176400Pulldown30FpsTo2398Fps = 220720;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 176400 Hz to 220500 Hz (220500.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown30FpsTo24Fps = 220500;
+constexpr const {datatype} sampleRate176400Pulldown30FpsTo24Fps = 220500;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 176400 Hz to 211680 Hz (211680.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown30FpsTo25Fps = 211680;
+constexpr const {datatype} sampleRate176400Pulldown30FpsTo25Fps = 211680;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 176400 Hz to 176576 Hz (176576.4)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate176400Pulldown30FpsTo2997Fps = 176576;
+constexpr const {datatype} sampleRate176400Pulldown30FpsTo2997Fps = 176576;
 
 /* ------------------------------ 192000 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate192000 = 192000;
+constexpr const {datatype} sampleRate192000 = 192000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 192000 Hz to 191808 Hz (191808.19181)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup2398FpsTo24Fps = 191808;
+constexpr const {datatype} sampleRate192000Pullup2398FpsTo24Fps = 191808;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27076% Pullup
 192000 Hz to 184136 Hz (184135.86414)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup2398FpsTo25Fps = 184136;
+constexpr const {datatype} sampleRate192000Pullup2398FpsTo25Fps = 184136;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 192000 Hz to 153600 Hz (153600.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup2398FpsTo2997Fps = 153600;
+constexpr const {datatype} sampleRate192000Pullup2398FpsTo2997Fps = 153600;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12464% Pullup
 192000 Hz to 153447 Hz (153446.55345)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup2398FpsTo30Fps = 153447;
+constexpr const {datatype} sampleRate192000Pullup2398FpsTo30Fps = 153447;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 192000 Hz to 192192 Hz (192192.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown24FpsTo2398Fps = 192192;
+constexpr const {datatype} sampleRate192000Pulldown24FpsTo2398Fps = 192192;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 192000 Hz to 184320 Hz (184320.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup24FpsTo25Fps = 184320;
+constexpr const {datatype} sampleRate192000Pullup24FpsTo25Fps = 184320;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.8748% Pullup
 192000 Hz to 153754 Hz (153753.6)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup24FpsTo2997Fps = 153754;
+constexpr const {datatype} sampleRate192000Pullup24FpsTo2997Fps = 153754;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 192000 Hz to 153600 Hz (153600.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup24FpsTo30Fps = 153600;
+constexpr const {datatype} sampleRate192000Pullup24FpsTo30Fps = 153600;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27083% Pulldown
 192000 Hz to 200200 Hz (200200.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown25FpsTo2398Fps = 200200;
+constexpr const {datatype} sampleRate192000Pulldown25FpsTo2398Fps = 200200;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16667% Pulldown
 192000 Hz to 200000 Hz (200000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown25FpsTo24Fps = 200000;
+constexpr const {datatype} sampleRate192000Pulldown25FpsTo24Fps = 200000;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88012% Pullup
 192000 Hz to 160160 Hz (160160.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup25FpsTo2997Fps = 160160;
+constexpr const {datatype} sampleRate192000Pullup25FpsTo2997Fps = 160160;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 192000 Hz to 160000 Hz (160000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup25FpsTo30Fps = 160000;
+constexpr const {datatype} sampleRate192000Pullup25FpsTo30Fps = 160000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 192000 Hz to 240000 Hz (240000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown2997FpsTo2398Fps = 240000;
+constexpr const {datatype} sampleRate192000Pulldown2997FpsTo2398Fps = 240000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 192000 Hz to 239760 Hz (239760.23976)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown2997FpsTo24Fps = 239760;
+constexpr const {datatype} sampleRate192000Pulldown2997FpsTo24Fps = 239760;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88021% Pulldown
 192000 Hz to 230170 Hz (230169.83017)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown2997FpsTo25Fps = 230170;
+constexpr const {datatype} sampleRate192000Pulldown2997FpsTo25Fps = 230170;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 192000 Hz to 191808 Hz (191808.19181)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pullup2997FpsTo30Fps = 191808;
+constexpr const {datatype} sampleRate192000Pullup2997FpsTo30Fps = 191808;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 192000 Hz to 240240 Hz (240240.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown30FpsTo2398Fps = 240240;
+constexpr const {datatype} sampleRate192000Pulldown30FpsTo2398Fps = 240240;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 192000 Hz to 240000 Hz (240000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown30FpsTo24Fps = 240000;
+constexpr const {datatype} sampleRate192000Pulldown30FpsTo24Fps = 240000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 192000 Hz to 230400 Hz (230400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown30FpsTo25Fps = 230400;
+constexpr const {datatype} sampleRate192000Pulldown30FpsTo25Fps = 230400;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 192000 Hz to 192192 Hz (192192.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate192000Pulldown30FpsTo2997Fps = 192192;
+constexpr const {datatype} sampleRate192000Pulldown30FpsTo2997Fps = 192192;
 
 /* ------------------------------ 384000 Hz ------------------------------- */
 
-constexpr const uint32_t sampleRate384000 = 384000;
+constexpr const {datatype} sampleRate384000 = 384000;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 24 fps (NTSC); 0.1% Pullup
 384000 Hz to 383616 Hz (383616.38362)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup2398FpsTo24Fps = 383616;
+constexpr const {datatype} sampleRate384000Pullup2398FpsTo24Fps = 383616;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 25 fps (PAL); 4.27076% Pullup
 384000 Hz to 368272 Hz (368271.72827)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup2398FpsTo25Fps = 368272;
+constexpr const {datatype} sampleRate384000Pullup2398FpsTo25Fps = 368272;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 29.97 fps (NTSC); 25.0% Pullup
 384000 Hz to 307200 Hz (307200.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup2398FpsTo2997Fps = 307200;
+constexpr const {datatype} sampleRate384000Pullup2398FpsTo2997Fps = 307200;
 
 /*****************************************************************************
 23.98 fps (NTSC) to 30 fps (NTSC); 25.12504% Pullup
 384000 Hz to 306893 Hz (306893.10689)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup2398FpsTo30Fps = 306893;
+constexpr const {datatype} sampleRate384000Pullup2398FpsTo30Fps = 306893;
 
 /*****************************************************************************
 24 fps (NTSC) to 23.98 fps (NTSC); 0.1% Pulldown
 384000 Hz to 384384 Hz (384384.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown24FpsTo2398Fps = 384384;
+constexpr const {datatype} sampleRate384000Pulldown24FpsTo2398Fps = 384384;
 
 /*****************************************************************************
 24 fps (NTSC) to 25 fps (PAL); 4.16667% Pullup
 384000 Hz to 368640 Hz (368640.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup24FpsTo25Fps = 368640;
+constexpr const {datatype} sampleRate384000Pullup24FpsTo25Fps = 368640;
 
 /*****************************************************************************
 24 fps (NTSC) to 29.97 fps (NTSC); 24.87521% Pullup
 384000 Hz to 307507 Hz (307507.2)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup24FpsTo2997Fps = 307507;
+constexpr const {datatype} sampleRate384000Pullup24FpsTo2997Fps = 307507;
 
 /*****************************************************************************
 24 fps (NTSC) to 30 fps (NTSC); 25.0% Pullup
 384000 Hz to 307200 Hz (307200.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup24FpsTo30Fps = 307200;
+constexpr const {datatype} sampleRate384000Pullup24FpsTo30Fps = 307200;
 
 /*****************************************************************************
 25 fps (PAL) to 23.98 fps (NTSC); 4.27083% Pulldown
 384000 Hz to 400400 Hz (400400.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown25FpsTo2398Fps = 400400;
+constexpr const {datatype} sampleRate384000Pulldown25FpsTo2398Fps = 400400;
 
 /*****************************************************************************
 25 fps (PAL) to 24 fps (NTSC); 4.16667% Pulldown
 384000 Hz to 400000 Hz (400000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown25FpsTo24Fps = 400000;
+constexpr const {datatype} sampleRate384000Pulldown25FpsTo24Fps = 400000;
 
 /*****************************************************************************
 25 fps (PAL) to 29.97 fps (NTSC); 19.88012% Pullup
 384000 Hz to 320320 Hz (320320.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup25FpsTo2997Fps = 320320;
+constexpr const {datatype} sampleRate384000Pullup25FpsTo2997Fps = 320320;
 
 /*****************************************************************************
 25 fps (PAL) to 30 fps (NTSC); 20.0% Pullup
 384000 Hz to 320000 Hz (320000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup25FpsTo30Fps = 320000;
+constexpr const {datatype} sampleRate384000Pullup25FpsTo30Fps = 320000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 23.98 fps (NTSC); 25.0% Pulldown
 384000 Hz to 480000 Hz (480000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown2997FpsTo2398Fps = 480000;
+constexpr const {datatype} sampleRate384000Pulldown2997FpsTo2398Fps = 480000;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 24 fps (NTSC); 24.875% Pulldown
 384000 Hz to 479520 Hz (479520.47952)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown2997FpsTo24Fps = 479520;
+constexpr const {datatype} sampleRate384000Pulldown2997FpsTo24Fps = 479520;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 25 fps (PAL); 19.88021% Pulldown
 384000 Hz to 460340 Hz (460339.66034)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown2997FpsTo25Fps = 460340;
+constexpr const {datatype} sampleRate384000Pulldown2997FpsTo25Fps = 460340;
 
 /*****************************************************************************
 29.97 fps (NTSC) to 30 fps (NTSC); 0.1% Pullup
 384000 Hz to 383616 Hz (383616.38362)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pullup2997FpsTo30Fps = 383616;
+constexpr const {datatype} sampleRate384000Pullup2997FpsTo30Fps = 383616;
 
 /*****************************************************************************
 30 fps (NTSC) to 23.98 fps (NTSC); 25.125% Pulldown
 384000 Hz to 480480 Hz (480480.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown30FpsTo2398Fps = 480480;
+constexpr const {datatype} sampleRate384000Pulldown30FpsTo2398Fps = 480480;
 
 /*****************************************************************************
 30 fps (NTSC) to 24 fps (NTSC); 25.0% Pulldown
 384000 Hz to 480000 Hz (480000.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown30FpsTo24Fps = 480000;
+constexpr const {datatype} sampleRate384000Pulldown30FpsTo24Fps = 480000;
 
 /*****************************************************************************
 30 fps (NTSC) to 25 fps (PAL); 20.0% Pulldown
 384000 Hz to 460800 Hz (460800.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown30FpsTo25Fps = 460800;
+constexpr const {datatype} sampleRate384000Pulldown30FpsTo25Fps = 460800;
 
 /*****************************************************************************
 30 fps (NTSC) to 29.97 fps (NTSC); 0.1% Pulldown
 384000 Hz to 384384 Hz (384384.0)
 *****************************************************************************/
 
-constexpr const uint32_t sampleRate384000Pulldown30FpsTo2997Fps = 384384;
+constexpr const {datatype} sampleRate384000Pulldown30FpsTo2997Fps = 384384;
 
 };
 

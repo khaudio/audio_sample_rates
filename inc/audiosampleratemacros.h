@@ -1,8 +1,7 @@
 /*****************************************************************************
-Definitions for common audio sample rates
-for use with common video frame rates,
-particularly for timing corrections
-via reinterpretation.
+Definitions for common audio sample rates for use with
+common video frame rates, particularly for
+timing corrections via reinterpretation.
 
 MIT License
 

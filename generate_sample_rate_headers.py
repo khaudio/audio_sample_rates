@@ -14,6 +14,10 @@ import itertools
 topLevelFilename = 'audiosamplerates.h'
 macroFilename = 'inc/audiosampleratemacros.h'
 constValuesFilename = 'inc/audiosamplerateconstvalues.h'
+arrayFilename = 'inc/audiosampleratearray.h'
+
+# Datatype used to define sample rates
+datatype = 'uint32_t'
 
 # Align definitions at specified number of spaces
 definitionSpaceIndex = 61
@@ -47,10 +51,9 @@ framerates = [
 
 
 docAndLicense = f'''/{"*" * docstringBorderLen}
-Definitions for common audio sample rates
-for use with common video frame rates,
-particularly for timing corrections
-via reinterpretation.
+Definitions for common audio sample rates for use with
+common video frame rates, particularly for
+timing corrections via reinterpretation.
 
 MIT License
 
@@ -143,73 +146,89 @@ def convert_sample_rate(baseSampleRate, framerateIn, framerateOut):
 if __name__ == '__main__':
     with open(macroFilename, 'w') as mFile:
         with open(constValuesFilename, 'w') as cFile:
+            with open(arrayFilename, 'w') as aFile:
 
-            topLevelName = 'AUDIOSAMPLERATES_H'
-            macroName = 'AUDIOSAMPLERATEMACROS_H'
-            constValuesName = 'AUDIOSAMPLERATECONSTVALUES_H'
+                topLevelName = 'AUDIOSAMPLERATES_H'
+                macroName = 'AUDIOSAMPLERATEMACROS_H'
+                constValuesName = 'AUDIOSAMPLERATECONSTVALUES_H'
+                arrayName = 'AUDIOSAMPLERATEARRAY_H'
 
-            mFile.write(docAndLicense)
-            cFile.write(docAndLicense)
-            
-            mFile.write(f'#ifndef {macroName}\n#define {macroName}\n\n')
-            cFile.write(f'#ifndef {constValuesName}\n#define {constValuesName}\n\n')
-            cFile.write(f'#include <cstdint>\n\n')
+                mFile.write(docAndLicense)
+                cFile.write(docAndLicense)
+                aFile.write(docAndLicense)
 
-            cFile.write('namespace AudioSampleRate\n{\n\n')
+                mFile.write(f'#ifndef {macroName}\n#define {macroName}\n\n')
+                cFile.write(f'#ifndef {constValuesName}\n#define {constValuesName}\n\n')
+                aFile.write(f'#ifndef {arrayName}\n#define {arrayName}\n\n')
 
-            for samplerate in samplerates:
-                baseRateName = f'{samplerate} Hz'
-                dashesPerSide = (headerLineLen - (len(baseRateName) + 8)) / 2
-                addOneDash = dashesPerSide != int(dashesPerSide)
-                dashesPerSide = int(dashesPerSide)
-                header = (
-                        f'/* {"-" * dashesPerSide} {baseRateName} '
-                        f'{("-" * dashesPerSide) + "-" * addOneDash} */'
-                    )
-                
-                mFile.write(f'{header}\n\n')
-                cFile.write(f'{header}\n\n')
+                cFile.write(f'#include <cstdint>\n\n')
+                aFile.write(f'#include <cstdint>\n#include <array>\n\n')
 
-                baseDefinition = f'#define SAMPLE_RATE_{samplerate}'
-                numSpaces = definitionSpaceIndex - len(baseDefinition)
-                declarationPreface = 'constexpr const uint32_t '
+                cFile.write('namespace AudioSampleRate\n{\n\n')
+                aFile.write('namespace AudioSampleRate\n{\n\n')
 
-                mFile.write(
-                        f'{baseDefinition}'
-                        + (' ' * numSpaces)
-                        + f'{samplerate}\n\n'
-                    )
-                cFile.write(
-                        f'{declarationPreface}sampleRate{samplerate} = '
-                        + f'{samplerate};\n\n'
-                    )
+                aFile.write(f'constexpr const std::array<{datatype}, 252> validSampleRates')
+                aFile.write(' = {\n')
 
-                for i in itertools.permutations(framerates, 2):
-                    docstring, macro, typedef, roundedInteger = (
-                            convert_sample_rate(samplerate, i[0], i[1])
+                for samplerate in samplerates:
+                    baseRateName = f'{samplerate} Hz'
+                    dashesPerSide = (headerLineLen - (len(baseRateName) + 8)) / 2
+                    addOneDash = dashesPerSide != int(dashesPerSide)
+                    dashesPerSide = int(dashesPerSide)
+                    header = (
+                            f'/* {"-" * dashesPerSide} {baseRateName} '
+                            f'{("-" * dashesPerSide) + "-" * addOneDash} */'
                         )
-                    
-                    mFile.write(docstring)
-                    mFile.write(macro)
-                    mFile.write(str(roundedInteger))
-                    mFile.write('\n\n')
-                    
-                    cFile.write(docstring)
-                    cFile.write(declarationPreface)
-                    cFile.write(typedef)
-                    cFile.write(f' = {roundedInteger};\n\n')
-            
-            cFile.write('};\n\n')
 
-            mFile.write(f'#endif\n')
-            cFile.write(f'#endif\n')
+                    mFile.write(f'{header}\n\n')
+                    cFile.write(f'{header}\n\n')
+
+                    baseDefinition = f'#define SAMPLE_RATE_{samplerate}'
+                    numSpaces = definitionSpaceIndex - len(baseDefinition)
+                    declarationPreface = 'constexpr const {datatype} '
+
+                    mFile.write(
+                            f'{baseDefinition}'
+                            + (' ' * numSpaces)
+                            + f'{samplerate}\n\n'
+                        )
+                    cFile.write(
+                            f'{declarationPreface}sampleRate{samplerate} = '
+                            + f'{samplerate};\n\n'
+                        )
+                    aFile.write(f'{" " * 8}{samplerate},\n')
+
+                    for i in itertools.permutations(framerates, 2):
+                        docstring, macro, typedef, roundedInteger = (
+                                convert_sample_rate(samplerate, i[0], i[1])
+                            )
+
+                        mFile.write(docstring)
+                        mFile.write(macro)
+                        mFile.write(str(roundedInteger))
+                        mFile.write('\n\n')
+                        
+                        cFile.write(docstring)
+                        cFile.write(declarationPreface)
+                        cFile.write(typedef)
+                        cFile.write(f' = {roundedInteger};\n\n')
+
+                        aFile.write(f'{" " * 8}{roundedInteger},\n')
+
+                cFile.write('};\n\n')
+                aFile.write('    };\n\n};\n\n')
+
+                mFile.write(f'#endif\n')
+                cFile.write(f'#endif\n')
+                aFile.write(f'#endif\n')
 
     with open(topLevelFilename, 'w') as tlf:
         tlf.write(docAndLicense)
         tlf.write(
                 f'#ifndef {topLevelName}\n#define {topLevelName}\n\n'
                 + f'#include "{macroFilename}"\n'
-                + f'#include "{constValuesFilename}"\n\n'
+                + f'#include "{constValuesFilename}"\n'
+                + f'#include "{arrayFilename}"\n\n'
                 + '#endif'
             )
 
