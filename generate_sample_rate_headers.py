@@ -185,7 +185,7 @@ if __name__ == '__main__':
 
                     baseDefinition = f'#define SAMPLE_RATE_{samplerate}'
                     numSpaces = definitionSpaceIndex - len(baseDefinition)
-                    declarationPreface = 'constexpr const {datatype} '
+                    declarationPreface = f'constexpr const {datatype} '
 
                     mFile.write(
                             f'{baseDefinition}'
